@@ -1,0 +1,125 @@
+/* Main container styling */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./images/warehouse.jpg'); /* Path to the image */
+    background-size: cover;  /* Cover the entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Paper container */
+.paper {
+    padding: 40px;
+    width: 380px;
+    background-color: rgba(255, 255, 255, 0.8);  /* Light opacity to allow background image to show through */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(11, 61, 145, 0.15); /* Soft navy shadow */
+}
+
+/* Avatar styling */
+.avatar {
+    background-color: #28569f; /* Navy */
+    margin-bottom: 20px;
+}
+
+/* Header styling */
+h2 {
+    color: #28569f; /* Navy */
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form row spacing */
+.form-row {
+    margin-bottom: 0; /* Remove margin between rows */
+    padding: 0; /* Remove padding */
+}
+
+/* Text fields styling */
+.text-field {
+    width: 100%;
+}
+
+/* MUI override if needed */
+.MuiFilledInput-root {
+    background-color: #ffffff !important;
+}
+
+.MuiInputLabel-root {
+    color: #28569f !important;
+    margin-bottom: 15px; /* Navy label */
+}
+
+/* Button styling */
+.button {
+    background-color: #072c6c !important; /* Navy */
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #228b22; /* Forest green */
+    transform: scale(1.02);
+}
+
+/* Divider styling */
+.divider {
+    margin: 20px 0;
+    color: #0b3d91;
+    font-weight: 500;
+}
+
+/* Google Sign-In */
+#google-signin {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* Link to Sign up */
+.signup-link {
+    text-align: center;
+    font-size: 15px;
+    color: #0b3d91;
+}
+
+.signup-link a {
+    color: #228b22; /* Forest green */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Error message styling */
+.error-message {
+    color: #cc0000;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+/* Adjusting the spacing for the role dropdown */
+.role-select {
+    padding-top: 20px; /* No padding */
+}
+
+/* Ensure Select component does not overlap the label */
+.MuiFormControl-root {
+    margin-top: 20px; /* No margin */
+}

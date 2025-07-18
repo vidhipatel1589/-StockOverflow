@@ -1,0 +1,58 @@
+/* TermsPage.css */
+
+.terms-background {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 4rem 1rem;
+    background-image: url('./images/warehouse.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main terms content container */
+.terms-paper {
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+.terms-title {
+    color: #0b3d91;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.terms-date {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.terms-section-title {
+    color: #072c6c;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.terms-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2c3e50;
+    white-space: pre-line;
+}
+
+.terms-divider {
+    margin: 20px 0;
+    height: 1px;
+    background-color: #cce3d1;
+}

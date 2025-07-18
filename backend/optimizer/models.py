@@ -1,0 +1,82 @@
+from sqlalchemy import Column, Integer, String, Enum, Boolean, Float, ForeignKey, Date, Time
+from sqlalchemy.orm import relationship
+from backend.app.core.database import Base
+
+# User Model
+class User(Base):
+    __tablename__ = "users"
+    
+    user_id = Column(Integer, primary_key=True, autoincrement=True)
+    role = Column(Enum('EMPLOYEE', 'CLIENT', name='role_enum'), nullable=False)
+    email = Column(String(100), unique=True, nullable=False)
+    phone_number = Column(String(50), nullable=True)
+    address = Column(String(100), nullable=True)
+    password_hash = Column(String(255), nullable=False)  # Correct column name
+    name = Column(String(100), nullable=True)
+    is_google_account = Column(Boolean, default=False)
+
+# Product Model
+class Product(Base):
+    __tablename__ = "PRODUCT"
+    
+    Product_ID = Column(Integer, primary_key=True, index=True)
+    Name = Column(String(100))
+    Height = Column(Float)
+    Width = Column(Float)
+    Depth = Column(Float)
+    Weight = Column(Float)
+    Price = Column(Float)
+    Temperature_requirement = Column(Float)
+    Security_level = Column(Integer)
+
+# Warehouse Model
+class Warehouse(Base):
+    __tablename__ = "WAREHOUSE"
+    
+    Warehouse_ID = Column(Integer, primary_key=True, index=True)
+    location = Column(String(255))
+    height = Column(Float)
+    width = Column(Float)
+    depth = Column(Float)
+    max_capacity = Column(Float)
+    current_fill_level = Column(Float)
+    availability = Column(Boolean)
+    security_level = Column(Integer)
+    temperature = Column(Float)
+    price_per_sq = Column(Float)
+    unit_ID_number = Column(Integer, ForeignKey("UNITS.Unit_ID"))
+
+# Unit Model
+class Unit(Base):
+    __tablename__ = "UNITS"
+    
+    Unit_ID = Column(Integer, primary_key=True, index=True)
+    price = Column(Float)
+    height = Column(Float)
+    width = Column(Float)
+    depth = Column(Float)
+
+# Client Model
+class Client(Base):
+    __tablename__ = "CLIENTS"
+    
+    Client_ID = Column(Integer, primary_key=True, index=True)
+    Name = Column(String(100))
+    Title_Role = Column(String(100))
+    Phone_nr = Column(String(20))
+    Email = Column(String(100))
+    Address = Column(String(255))
+    Company_name = Column(String(100))
+    Nr_of_rented_warehouses = Column(Integer)
+
+# Order Model
+class Order(Base):
+    __tablename__ = "ORDER"
+    
+    Order_ID = Column(Integer, primary_key=True, index=True)
+    product_id = Column(Integer, ForeignKey("PRODUCT.Product_ID"))
+    client_id = Column(Integer, ForeignKey("CLIENTS.Client_ID"))
+    quantity = Column(Integer)
+    date = Column(Date)
+    time = Column(Time)
+    unit_id_number = Column(Integer, ForeignKey("UNITS.Unit_ID"))

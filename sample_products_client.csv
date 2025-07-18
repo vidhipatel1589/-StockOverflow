@@ -1,0 +1,6 @@
+id,width,height,depth,weight,volume,security,temperature,clientid,quantity
+p16,1200,3600,800,2400,3456000000,high,regular,c16,5
+p17,600,300,400,30,72000000,regular,cold,c17,7
+p18,800,1200,700,120,672000000,high,cold,c18,3
+p19,1000,2000,600,200,1200000000,regular,regular,c19,8
+p20,900,1000,500,150,450000000,high,regular,c20,4

@@ -1,0 +1,26 @@
+/* /static/css/style.css */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Chart container styling */
+#chart-container {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

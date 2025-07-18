@@ -1,0 +1,55 @@
+from pydantic import BaseModel
+from typing import Literal, List, Optional
+
+class ProductCreate(BaseModel):
+    name: str
+    width: float
+    height: float
+    depth: float
+    weight: float
+    quantity: int
+    security: str
+    temperature: str
+
+class ProductOut(ProductCreate):
+    id: int
+    class Config:
+        orm_mode = True
+
+
+
+
+# class ProductBase(BaseModel):
+#     Name: str
+#     Height: float
+#     Width: float
+#     Depth: float
+#     Weight: float
+#     Quantity: float
+#     Temperature_requirement: Literal["Regular", "Cold"]
+#     Security_level: Literal["Regular", "High"]
+
+
+# class ProductOut(ProductBase):
+#     id: int
+#     class Config:
+#         orm_mode = True
+
+# class OrderItemCreate(BaseModel):
+#     product_id: int
+#     quantity: int
+
+# class OrderCreate(BaseModel):
+#     items: List[OrderItemCreate]
+
+
+# class ProductCreate(ProductBase):
+#     pass
+
+# class ProductOut(ProductBase):
+#     Product_ID: int
+
+
+#     class Config:
+#         orm_mode = True
+#         from_attributes = True

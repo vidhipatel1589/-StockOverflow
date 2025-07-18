@@ -1,0 +1,5 @@
+Warehouse_Type,Container_Index,Container_X,Container_Y,Container_Z,Product_ID,Product_X,Product_Y,Product_Z,Product_Width,Product_Depth,Product_Height,Client_id
+regular_cold,0,0,0,0,p1,0,0,0,300,150,200,c19
+regular_cold,0,0,0,0,p1,0,150,0,300,150,200,c19
+regular_cold,0,0,0,0,p1,0,300,0,300,150,200,c19
+high_regular,0,0,0,0,p2,0,0,0,102,230,481,c20

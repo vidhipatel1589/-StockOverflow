@@ -1,0 +1,7 @@
+# Always use LF for all text files
+* text=auto
+*.py text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.csv text eol=lf

@@ -1,0 +1,33 @@
+product = {
+    "height": 10,
+    "width": 5,
+    "depth": 5,
+    "temperature_requirement": 4,
+    "security_level": 2
+}
+
+{
+  "unit_id": 12,
+  "warehouse_id": 5,
+  "position": [0,0,0]
+}
+
+/api
+  ├── /auth/login        
+  ├── /products/add      
+  ├── /orders/place      
+  ├── /optimize/run      
+  ├── /units/available  
+  ├── /warehouse/status  
+  ├── /analytics/usage   
+
+INSERT INTO PRODUCT VALUES (1, 'Lamp', 10, 5, 5, 2, 19.99, 15.0, 2);
+INSERT INTO PRODUCT VALUES (2, 'Bookshelf', 180, 80, 30, 35, 129.99, 22.0, 3);
+INSERT INTO PRODUCT VALUES (3, 'Mini Fridge', 90, 60, 60, 45, 229.50, 4.0, 5);
+INSERT INTO PRODUCT VALUES (4, 'Desk Chair', 110, 50, 50, 12, 89.90, 20.0, 2);
+INSERT INTO PRODUCT VALUES (5, 'Monitor', 50, 70, 20, 8, 149.99, 18.0, 3);
+INSERT INTO PRODUCT VALUES (6, 'Toolbox', 25, 40, 30, 10, 59.00, 0.0, 1);
+INSERT INTO PRODUCT VALUES (7, 'Server Rack', 200, 60, 100, 80, 499.99, 16.0, 5);
+INSERT INTO PRODUCT VALUES (8, 'Filing Cabinet', 140, 50, 60, 25, 109.95, 21.0, 2);
+INSERT INTO PRODUCT VALUES (9, 'Microwave', 35, 50, 40, 15, 79.95, 5.0, 3);
+INSERT INTO PRODUCT VALUES (10, 'Printer', 40, 45, 50, 18, 99.99, 10.0, 2);
