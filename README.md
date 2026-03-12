@@ -22,15 +22,16 @@ This project was built to:
 - Implement AI-driven decision making using optimization algorithms
 
 ## Tech Stack
-**Frontend - React.js, Material UI
-Backend - FastAPI (Python)
-Database - MySQL
-Optimization - 3D Bin Packing Algorithm**
+- Frontend - React.js, Material UI
+- Backend - FastAPI (Python)
+- Database - MySQL
+- Optimization - 3D Bin Packing Algorithm
 
 ## Optimization Algorithm
 The system uses a 3D bin packing optimization algorithm to determine the most efficient way to place products within warehouse containers. The optimizer generates a warehouse layout visualization showing how products and containers are arranged to maximize storage efficiency while maintaining safe placement.
 
-Key aspects of the algorithm:
+**
+Key aspects of the algorithm:**
 
 3D Bin Packing Optimization
 - Products are organized into containers (bins) to maximize warehouse space utilization.
@@ -59,20 +60,20 @@ Interactive dashboards provide insights into:
 
 ## Setup Instructions
 1. Clone the Repository
-git clonehttps://github.com/vidhipatel1589/-StockOverflow.git
-cd ./-StockOverflow
+- git clonehttps://github.com/vidhipatel1589/-StockOverflow.git
+- cd ./-StockOverflow
 
 2. Install Frontend Dependencies
-cd frontend
-npm install
-npm start
+- cd frontend
+- npm install
+- npm start
 
 3. Install Backend Dependencies
-cd backend
-pip install -r requirements.txt
+- cd backend
+- pip install -r requirements.txt
 
 4. Run the backend server
-uvicorn main:app --reload
+- uvicorn main:app --reload
 
 
 
