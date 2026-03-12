@@ -22,10 +22,10 @@ This project was built to:
 - Implement AI-driven decision making using optimization algorithms
 
 ## Tech Stack
-Frontend - React.js, Material UI
+**Frontend - React.js, Material UI
 Backend - FastAPI (Python)
 Database - MySQL
-Optimization - 3D Bin Packing Algorithm
+Optimization - 3D Bin Packing Algorithm**
 
 ## Optimization Algorithm
 The system uses a 3D bin packing optimization algorithm to determine the most efficient way to place products within warehouse containers. The optimizer generates a warehouse layout visualization showing how products and containers are arranged to maximize storage efficiency while maintaining safe placement.
