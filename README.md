@@ -75,6 +75,10 @@ Interactive dashboards provide insights into:
 4. Run the backend server
   - uvicorn main:app --reload
 
+5. Database Setup
+ - Create a new MySQL database
+ - Configure database connection in .env file
+
 
 
 
