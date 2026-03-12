@@ -9,6 +9,7 @@ from dotenv import load_dotenv  # Import this to load .env file
 # Load environment variables from .env file
 load_dotenv()
 
+
 SECRET_KEY = "GM_FHkUk2jtUeSbW9p5NckVzNGAE07ukSKoAMoh7ZFU"
 ALGORITHM = "HS256"
 
