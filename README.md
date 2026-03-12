@@ -51,7 +51,7 @@ Row-Based Warehouse Layout
 Interactive 3D Visualization
 - Users can rotate and explore the warehouse layout. Hovering over products displays their Product ID, and hovering over containers shows their location coordinates.
 
-# Analytics Dashboard
+## Analytics Dashboard
 Interactive dashboards provide insights into:
 - Storage usage
 - Order breakdown
