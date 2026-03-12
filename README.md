@@ -60,7 +60,7 @@ Interactive dashboards provide insights into:
 
 ## Setup Instructions
 1. Clone the Repository
-  - git clonehttps://github.com/vidhipatel1589/-StockOverflow.git
+  - git clone https://github.com/vidhipatel1589/-StockOverflow.git
   - cd ./-StockOverflow
 
 2. Install Frontend Dependencies
